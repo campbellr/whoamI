@@ -33,7 +33,7 @@ func main() {
 	http.HandleFunc("/echo", echoHandler)
 	http.HandleFunc("/bench", benchHandler)
 	http.HandleFunc("/", whoamI)
-	http.HandleFunc("/api", api)
+	http.HandleFunc("/api/", api)
 	http.HandleFunc("/health", healthHandler)
 	fmt.Println("Starting up on port " + port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
