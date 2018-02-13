@@ -2,8 +2,10 @@
 
 Tiny Go webserver that prints os information and HTTP request to output
 
+Forked from [emilevauge/whoamI](https://github.com/emilevauge/whoamI)
+
 ```sh
-$ docker run -d -P --name iamfoo emilevauge/whoami
+$ docker run -d -P --name iamfoo campbellr/whoami
 $ docker inspect --format '{{ .NetworkSettings.Ports }}'  iamfoo
 map[80/tcp:[{0.0.0.0 32769}]]
 $ curl "http://0.0.0.0:32769"
